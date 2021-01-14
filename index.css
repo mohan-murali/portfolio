@@ -318,7 +318,7 @@
     flex-wrap: wrap;
   }
 
-    @media (max-width: 28.75em) {
+    @media (max-width: 47.5em) {
       .card {
         width: 100rem;
       }
