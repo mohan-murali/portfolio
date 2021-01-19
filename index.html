@@ -35,7 +35,7 @@
         />
       </a>
     </div>
-    <ul class="nav-list">
+    <ul id="navigation-list" class="nav-list">
       <li>
         <a href="#welcome-section">Home</a>
       </li>
@@ -46,6 +46,11 @@
         <a href="#contact">Contact</a>
       </li>
     </ul>
+    <div id="hamburger-menu" class="mobile-navigation">
+      <a onclick="myFunction()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+    </div>
   </nav>
 
   <!-- END NAV -->
@@ -146,6 +151,15 @@
 
   <!-- END FOOTER SECTION -->
 
-
+<script>
+  function myFunction() {
+      var x = document.getElementById("navigation-list");
+      if (x.className === "nav-list") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-list";
+      }
+    }
+</script>
 </body>
 </html>

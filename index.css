@@ -110,7 +110,9 @@
 
   .nav {
     display: flex;
+    position: sticky;
     justify-content: space-around;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -136,6 +138,45 @@
 
   .logo {
     width: 7rem;
+  }
+
+  .mobile-navigation {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+  }
+
+  @media (max-width: 47.5em) {
+    .nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 20px;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .nav-list a {
+      display: block;
+      width: 100%;
+    }
+
+    .nav-list li{
+      display: none;
+    }
+
+    .nav-list.responsive li {
+      display: block;
+    }
+
+    .mobile-navigation {
+      display: block;
+    }
   }
 
   /* Welcome section */
@@ -319,10 +360,10 @@
     flex-wrap: wrap;
   }
 
-    @media (max-width: 47.5em) {
-      .card {
-        width: 100rem;
-      }
+  @media (max-width: 47.5em) {
+    .card {
+      width: 100rem;
     }
+  }
 
   /* Cards End */
