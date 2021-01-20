@@ -1,10 +1,10 @@
 /* Custom properties/variables  */
 :root {
-    --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
-    --main-black: #363636;
+    --main-white:#f1f2f6;
+    --main-red: #e40a0a;
+    --main-blue: #192a56;
+    --main-gray: #2f3542;
+    --main-black: #1e272e;
   }
 
   /* Base reset */
@@ -306,8 +306,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    background: var(--main-black);
   }
 
   footer > p {
