@@ -16,7 +16,6 @@ fetch("https://dev.to/api/articles?username=_mohanmurali&per_page=3")
   });
 
 function createBlog(blog) {
-  console.log(blog);
   return `
    <div class="blog_card">
    <a target="_blank" href="${blog.url}">
