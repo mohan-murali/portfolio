@@ -150,7 +150,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-left: 20px;
     }
 
     .nav-list {
@@ -174,6 +173,10 @@
 
     .mobile-navigation {
       display: block;
+    }
+
+    .logo{
+      margin-left: 2rem;
     }
   }
 
@@ -332,7 +335,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 2rem;
     background: var(--main-black);
     color: var(--main-white);
   }
