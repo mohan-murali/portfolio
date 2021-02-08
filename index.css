@@ -1,11 +1,9 @@
 /* Custom properties/variables  */
 :root {
     --main-white:#f1f2f6;
-    --main-red: #e40a0a;
-    --main-blue: #192a56;
     --main-gray: #2f3542;
     --main-black: #1e272e;
-    --second-white:#c2c3c7;
+    --main-blue: #0369A1;
   }
 
   /* Base reset */
@@ -75,7 +73,6 @@
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: var(--main-white);
   }
 
   h1,
@@ -184,23 +181,52 @@
 
   .welcome-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #000;
-    background-image: url("./hello_world_new_black.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 5%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    max-width: 135rem;
+    margin: auto;
   }
 
-  .welcome-section > p {
+  .welcome-image {
+    width: 50%;
+    padding-left: 3rem;
+  }
+
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+    padding-left: 15rem;
+  }
+
+  .welcome-content > p {
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 400;
     font-style: italic;
-    color: var(--main-red);
+  }
+
+  @media (max-width: 47.5em) {
+    .welcome-section {
+      flex-direction: column;
+    }
+
+    .welcome-image{
+      width: 100%;
+      padding: 0 6rem;
+    }
+
+    .welcome-content{
+      width: 100%;
+      padding: 3rem 3rem 0 3rem;
+    }
   }
 
   /* skills section */
@@ -209,6 +235,8 @@
     text-align: center;
     padding: 10rem 2rem;
     background: var(--main-white);
+    max-width: 135rem;
+    margin: auto;
   }
 
   .skills-section-header {
@@ -245,7 +273,8 @@
   .blogs-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--second-white);
+    max-width: 135rem;
+    margin: auto;
   }
 
   .blog_section_title {
@@ -266,7 +295,6 @@
     width: 30rem;
     height: 35rem;
     padding: 0.5rem 1rem;
-    background-color: var(--main-gray);
     border-radius: 8px;
     box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -274,7 +302,6 @@
     justify-content: flex-start;
     align-items: center;
     transition: 0.2s;
-    color: var(--main-blue);
     flex-wrap: wrap;
   }
   .blog_card:hover {
@@ -286,6 +313,7 @@
   }
 
   .blog_title{
+    color: var(--main-black);
     padding-top: 5rem;
   }
 
@@ -304,9 +332,9 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 60vh;
-    padding: 0 2rem;
-    background: var(--main-gray);
+    padding: 2rem 2rem 0 2rem;
+    background: var(--main-black);
+    color: var(--main-white);
   }
 
   .contact-section-header > h2 {
@@ -357,6 +385,7 @@
   /* Footer */
 
   footer {
+    color: var(--main-white);
     font-weight: 300;
     display: flex;
     justify-content: space-evenly;
@@ -394,7 +423,6 @@
     justify-content: center;
     align-items: center;
     transition: 0.2s;
-    color: var(--main-blue);
   }
   .card:hover {
     transform: translateY(-5px);
