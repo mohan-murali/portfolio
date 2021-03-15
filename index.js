@@ -9,7 +9,7 @@ function myFunction() {
 
  let blogSection = document.querySelector(".blog_cards");
 
-fetch("https://dev.to/api/articles?username=_mohanmurali&per_page=3")
+fetch("https://dev.to/api/articles?username=_mohanmurali&per_page=4")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((blog) => (blogSection.innerHTML += createBlog(blog)));
